@@ -1,12 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/alex-animation-static.png">
+  <main-page></main-page>
 </template>
 
 <script>
+import MainPage from './components/MainPage.vue';
 
 export default {
   name: 'App',
   components: {
+    MainPage,
   },
 };
 </script>
@@ -18,6 +20,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+section{
+  width: 100%;
+  min-height:100vh ;
+}
+
 </style>
