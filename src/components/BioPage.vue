@@ -11,5 +11,6 @@ export default {};
 <style scoped>
 section {
   background-color: black;
+  padding-top: 25px;
 }
 </style>

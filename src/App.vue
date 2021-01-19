@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header v-if="headerIsvisible"></header>
+    <my-header v-if="headerIsVisible"></my-header>
     <section v-if="mainIsVisible">
       <div class="container" @click="animation">
         <div>
@@ -25,6 +25,7 @@
 import WorkPage from './components/WorkPage.vue';
 import BioPage from './components/BioPage.vue';
 import ContactPage from './components/ContactPage.vue';
+import MyHeader from './components/MyHeader.vue';
 
 export default {
   name: 'App',
@@ -32,6 +33,7 @@ export default {
     BioPage,
     WorkPage,
     ContactPage,
+    MyHeader,
   },
   data() {
     return {
@@ -97,7 +99,7 @@ ul:hover {
 
 /* General Styles*/
 section {
-  min-height: 100vh;
+  min-height: calc(100vh - 25px);
 }
 h2 {
   margin-top: 0;
