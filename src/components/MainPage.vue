@@ -4,7 +4,7 @@
       <div>
         <img alt="Alex logo" src="../assets/alex-animation.gif" id="alexLogo" />
       </div>
-      <div>
+      <div class="menu">
         <ul>
           <li>Bio</li>
           <li>Work</li>
@@ -20,7 +20,22 @@ export default {};
 </script>
 
 <style scoped>
-container {
+.container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height:100vh;
+}
+.menu{
+  font-size: 3rem;
+  line-height: 1.5em;
+  position: absolute;
+  bottom: 40%;
+  left: 50%;;
+  text-align: left;
+}
+
+ul{
+    list-style: none;
 }
 </style>
